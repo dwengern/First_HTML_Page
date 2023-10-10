@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #96897f;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+#header-container {
+    position: relative;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+main div#Skills,
+main div#Interests,
+main div#Work,
+main div#Project{
+    display: none;
+}
+
+main ul {
+    display: block;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #96897f;
+    color: black;
+    padding: 10px;
+}
