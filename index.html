@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nick's Page</title>
+    <link rel="stylesheet" href="css/test2.css">
+    <script src="js/test.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="header-container">
+            <h1>Welcome To My Webpage</h1>
+        </div>
+        <nav>
+            <ul>
+                <li onclick="openPage('Home', this)"><a href="#">Home</a></li>
+                <li onclick="openPage('Skills', this)"><a href="#">Skills</a></li>
+                <li onclick="openPage('Interests', this)"><a href="#">Interests</a></li>
+                <li onclick="openPage('Work', this)"><a href="#">Work Experience</a></li>
+                <li onclick="openPage('Project', this)"><a href="#">Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="Home" class="Content">
+            <h2>Nicholas Dwenger's Page!</h2>
+            <p>Thank you for visiting my page. Use the tabs to learn more information about me</p>
+        </div>
+
+        <div id="Skills" class="Content">
+            <h2>My Skills</h2>
+            <p>Learn more about my skills I've learned so far in college!</p>
+            <h2>Programming Languages:</h2>
+            <ul>
+                <li>C, C++</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python, Shell</li>
+            </ul>
+        </div>
+
+        <div id="Interests" class="Content">
+            <h2>My Interests and Hobbies</h2>
+            <p>Learn about what I like to do and things I enjoy!</p>
+            <h2>Interests:</h2>
+            <ul>
+                <li>Sports</li>
+                <li>Music</li>
+                <li>Hiking</li>
+            </ul>
+            <h2>Hobbies:</h2>
+            <ul>
+                <li>Playing videogames</li>
+                <li>Hanging out with friends</li>
+                <li>Traveling/Exploring</li>
+            </ul>
+        </div>
+
+        <div id="Work" class="Content">
+            <h2>My Work Experience</h2>
+            <p>Take a look at some of my past jobs and work experiences</p>
+            <h2>Cashier - Bed, Bath, and Beyond (2019-2020)</h2>
+            <ul>
+                <li>Customer Service</li>
+                <li>Money Handling</li>
+                <li>Use software to help customer needs</li>
+            </ul>
+            <h2>Server - Greenwood Village South (2020-2021)</h2>
+            <ul>
+                <li>Served meals to residents</li>
+                <li>Prepared and cleaned kitchen</li>
+                <li>Provided friendly and helpful interactions with residents</li>
+            </ul>
+            <h2>Valet Runner - Denison Parking (2022-Present)</h2>
+            <ul>
+                <li>Use software to input guest information</li>
+                <li>Park and bring down guest's vehicles</li>
+                <li>Keep track of ticket numbers and keys using system</li>
+            </ul>
+        </div>
+
+        <div id="Project" class="Content">
+            <h2>JavaScript Events</h2>
+            <p>Use the buttons below to look at different JavaScript events</p>
+
+            <h2>OnClick Event:</h2>
+            <button id="button1" onclick="OnClick()">Click me!</button>
+            <p id="button1_p">Unclicked button</p>
+
+            <h2>MouseOver and MouseOut Event:</h2>
+            <p id="mouseover_p" onmouseover="MouseOver()" onmouseout="MouseOut()">Hover over me!</p>
+
+            <h2>OnSelect Event:</h2>
+            Select some of this text: <input type="text" value="Select me!" onselect="OnSelect()"><br><br>
+
+            <h2>OnBlur Event:</h2>
+            Enter your name: <input type="text" id="name" onblur="OnBlur()">
+        </div>
+
+    </main>
+
+    <footer>
+        <p> &copy; 2023 Nick Dwenger</p>
+    </footer>
+
+</body>
+
+</html>
