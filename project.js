@@ -31,3 +31,17 @@ function OnBlur(){
   let x = document.getElementById("name");
   x.value = "OnBlur event triggered!";
 }
+
+$("#m1").on("click", function () {
+  // HTTP POST request
+  $.post("http://35.188.215.226:8000/my_program", { "name": "Nick", "program": "cs" },
+      function (data, status) {
+          console.log("Post Status:");
+          console.log(status);
+          console.log("Post Data:");
+          console.log(data);
+          // Display response data on the page
+          $("#name").html(data["Name"]);
+          $("#tag").html(data["Program"]);
+      }, "json");
+});
